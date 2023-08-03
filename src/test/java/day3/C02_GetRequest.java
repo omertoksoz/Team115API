@@ -17,6 +17,7 @@ public class C02_GetRequest {
      The content type is application/json; Charset=utf-8
      The value of Header named Server is Cowboy
      The status line is HTTP/1.1 200 ok
+     METADATA -> data about data
      */
 
     // 1- End-point and Request body
@@ -57,7 +58,7 @@ public class C02_GetRequest {
 
         assertEquals(200,response.statusCode());
         assertEquals("application/json; charset=utf-8",response.contentType());
-        assertEquals("Cowboy",response.header("Server"));
+        assertEquals("Cowboy",response.getHeader("Server"));
         assertEquals("HTTP/1.1 200 OK",response.statusLine());
 
 

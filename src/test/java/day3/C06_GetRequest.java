@@ -1,7 +1,6 @@
 package day3;
 
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import utilities.BaseUrlSpec;
 
@@ -33,7 +32,7 @@ public class C06_GetRequest extends BaseUrlSpec {
 
     @Test
 
-    public void getRegres(){
+    public void getReqres(){
         // 1- End-point and request body
         specReqresIn.pathParams("pp1","api","pp2","users","pp3","6");
 
@@ -61,6 +60,8 @@ public class C06_GetRequest extends BaseUrlSpec {
 
 
     }
+
+
 
 
 
