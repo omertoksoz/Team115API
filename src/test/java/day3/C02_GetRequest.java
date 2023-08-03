@@ -46,7 +46,7 @@ public class C02_GetRequest {
                 .then()
                 .assertThat()
                 .statusCode(200)
-                .contentType("application/json; Charset=utf-8")
+                .contentType("application/json; charset=utf-8")
                 .header("Server","Cowboy")
                 .statusLine("HTTP/1.1 200 OK");
 
