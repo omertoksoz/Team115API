@@ -80,7 +80,7 @@ public class C07_GetRequest  extends BaseUrlSpec {
         *** TC08:Send a GET Request to https://restful-booker.herokuapp.com/booking/100
      and verify:
      The status code is 200
-     The content type is application/json; Charset=utf-8
+     The content type is application/json; charset=utf-8
      firstname is John
      lastname is Smith
      totalprice is 111
@@ -88,7 +88,7 @@ public class C07_GetRequest  extends BaseUrlSpec {
      bookingdates (checkin) is 2018-01-01
      bookingdates (checout) is 2019-01-01
 
-        *  {
+         {
        "firstname": "Jane",
        "lastname": "Doe",
        "totalprice": 111,
@@ -106,6 +106,30 @@ public class C07_GetRequest  extends BaseUrlSpec {
 
         // 1- End-point  request body
 
+        specHerokuapp.pathParams("pp1","booking","pp2","2051");
+
+        // 2- Expected data
+
+        // 3- Send request and save response
+
+        Response response= given().spec(specHerokuapp)
+                                .when()
+                                .get("/{pp1}/{pp2}");
+
+        // 4- Assertion
+
+        response
+                .then()
+                .statusCode(200)
+                .contentType("application/json; charset=utf-8")
+                .body("firstname",equalTo("Josh"),
+                      "lastname",equalTo("Allen"),
+                        "totalprice",equalTo(111),
+                        "depositpaid",equalTo(true),
+                        "bookingdates.checkin",equalTo("2018-01-01"),
+                        "bookingdates.checkout", equalTo("2019-01-01"),
+                        "additionalneeds",equalTo("super bowls")
+                );
 
 
 
