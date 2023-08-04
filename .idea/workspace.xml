@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C07 started.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day4/C07_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day4/C07_GetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day4/C08_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day4/C08_GetRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C07_GetRequest.getBooking">
+  <component name="RunManager" selected="JUnit.C08_GetRequest.postHerokuapp">
     <configuration name="C01_GetRequest.printResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
@@ -57,37 +57,6 @@
       <option name="PACKAGE_NAME" value="day3" />
       <option name="MAIN_CLASS_NAME" value="day3.C01_GetRequest" />
       <option name="METHOD_NAME" value="printResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C05_GetRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day3" />
-      <option name="MAIN_CLASS_NAME" value="day3.C05_GetRequest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C06_GetRequest.getReqres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day3" />
-      <option name="MAIN_CLASS_NAME" value="day3.C06_GetRequest" />
-      <option name="METHOD_NAME" value="getReqres" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,13 +94,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C08_GetRequest.postHerokuapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day4" />
+      <option name="MAIN_CLASS_NAME" value="day4.C08_GetRequest" />
+      <option name="METHOD_NAME" value="postHerokuapp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C08_GetRequest.userId1ReqresIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day4" />
+      <option name="MAIN_CLASS_NAME" value="day4.C08_GetRequest" />
+      <option name="METHOD_NAME" value="userId1ReqresIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.C08_GetRequest.postHerokuapp" />
+        <item itemvalue="JUnit.C08_GetRequest.userId1ReqresIn" />
         <item itemvalue="JUnit.C07_GetRequest.getBooking" />
         <item itemvalue="JUnit.C07_GetRequest.getReqresAll" />
         <item itemvalue="JUnit.C01_GetRequest.printResponse" />
-        <item itemvalue="JUnit.C06_GetRequest.getReqres" />
-        <item itemvalue="JUnit.C05_GetRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +146,7 @@
       <updated>1691018394911</updated>
       <workItem from="1691018395933" duration="8853000" />
       <workItem from="1691089779551" duration="10326000" />
+      <workItem from="1691109652631" duration="3622000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>
