@@ -47,7 +47,7 @@ public class C07_GetRequest  extends BaseUrlSpec {
 
         Response response = given().spec(specReqresIn)
                                 .when()
-                                .get("/{pp1}/{users}");
+                                .get("/{pp1}/{pp2}");
 
 
         // 4- Assertions
@@ -56,17 +56,28 @@ public class C07_GetRequest  extends BaseUrlSpec {
                 .then()
                 .statusCode(200)
                 .contentType("application/json; charset=utf-8")
-                .body()
+                .body("data[5].id",Matchers.equalTo(6),
+                     "data[5].email",equalTo("tracey.ramos@reqres.in"),
+                      "data[5].first_name",equalTo("Tracey"),
+                        "data[5].last_name", equalTo("Ramos"),
+                        "data[5].avatar",equalTo("https://reqres.in/img/faces/6-image.jpg"));
 
 
     }
+
+
+    /*
+
+
+    Break till 8:10 pm
+     */
 
 
 
     @Test
     public void getBooking(){
         /*
-        *** TC08:Send a GET Request to https://restful-booker.herokuapp.com/booking/433
+        *** TC08:Send a GET Request to https://restful-booker.herokuapp.com/booking/100
      and verify:
      The status code is 200
      The content type is application/json; Charset=utf-8
@@ -78,19 +89,24 @@ public class C07_GetRequest  extends BaseUrlSpec {
      bookingdates (checout) is 2019-01-01
 
         *  {
-       "firstname": "John",
-       "lastname": "Smith",
+       "firstname": "Jane",
+       "lastname": "Doe",
        "totalprice": 111,
        "depositpaid": true,
        "bookingdates": {
            "checkin": "2018-01-01",
            "checkout": "2019-01-01"
        },
-       "additionalneeds": "Breakfast"
+       "additionalneeds": "Extra pillows please"
    }
 
 
          */
+
+
+        // 1- End-point  request body
+
+
 
 
 

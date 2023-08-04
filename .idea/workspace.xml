@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C06 started">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day4/C07_GetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day4/C08_GetRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/C02_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/C02_GetRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/C06_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/C06_GetRequest.java" afterDir="false" />
+    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C07 started">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day4/C07_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day4/C07_GetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseUrlSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseUrlSpec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +46,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C01_GetRequest.printResponse">
+  <component name="RunManager" selected="JUnit.C07_GetRequest.getReqresAll">
     <configuration name="C01_GetRequest.printResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
@@ -133,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.C01_GetRequest.printResponse" />
         <item itemvalue="JUnit.C07_GetRequest.getReqresAll" />
+        <item itemvalue="JUnit.C01_GetRequest.printResponse" />
         <item itemvalue="JUnit.C06_GetRequest.getReqres" />
         <item itemvalue="JUnit.C05_GetRequest" />
         <item itemvalue="JUnit.C04_GetRequest" />
@@ -150,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691018394911</updated>
       <workItem from="1691018395933" duration="8853000" />
-      <workItem from="1691089779551" duration="7901000" />
+      <workItem from="1691089779551" duration="9536000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>
@@ -194,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691027640973</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="C07 started">
+      <created>1691106020130</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691106020130</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +208,7 @@
     <MESSAGE value="C04 complete" />
     <MESSAGE value="C05 complete" />
     <MESSAGE value="C06 started" />
-    <option name="LAST_COMMIT_MESSAGE" value="C06 started" />
+    <MESSAGE value="C07 started" />
+    <option name="LAST_COMMIT_MESSAGE" value="C07 started" />
   </component>
 </project>
