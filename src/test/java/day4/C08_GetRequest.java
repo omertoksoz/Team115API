@@ -1,5 +1,6 @@
 package day4;
 
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.codehaus.groovy.control.io.ReaderSource;
@@ -10,6 +11,8 @@ import utilities.BaseUrlSpec;
 
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertEquals;
 
 public class C08_GetRequest extends BaseUrlSpec {
@@ -103,42 +106,46 @@ public class C08_GetRequest extends BaseUrlSpec {
          */
 
 
-        // 1- End-point and request body
+         //1- End-point and request body
 
-       // specHerokuapp.pathParam("pp1","booking");
-//
-//        String url = "https://restful-booker.herokuapp.com/booking";
-//        JSONObject requestBody = new JSONObject();
-//        JSONObject bookingdates = new JSONObject();
-//
-//        bookingdates.put("checkin","2023-01-10");
-//        bookingdates.put("checkout","2023-01-20");
-//
-//        requestBody.put("firstname","Ahmet");
-//        requestBody.put("lastname","Bulut");
-//        requestBody.put("totalprice",44);
-//        requestBody.put("depositpaid",false);
-//        requestBody.put("bookingdates",bookingdates);
-//        requestBody.put("additionalneeds","wi-fi");
-//
-//        // 2- Expected data
-//
-//        // 3- send the request and save the response
-//
-//        Response response = given()
-//                                .when().body(requestBody.toString())
-//                                .post(url);
-//
-//
-//
-//        // 4- Assertions
-//
-//        response.then().log().all();
-////                .assertThat()
-////                .statusCode(200)
-////                .contentType("application/json; charset=utf-8")
-////                .body("booking.firstname","")
-//
+        specHerokuapp.pathParam("pp1","booking");
+
+
+        JSONObject requestBody = new JSONObject();
+        JSONObject bookingdates = new JSONObject();
+
+        bookingdates.put("checkin","2023-01-10");
+        bookingdates.put("checkout","2023-01-20");
+
+        requestBody.put("firstname","Ahmet");
+        requestBody.put("lastname","Bulut");
+        requestBody.put("totalprice",111);
+        requestBody.put("depositpaid",false);
+        requestBody.put("bookingdates",bookingdates);
+        requestBody.put("additionalneeds","wi-fi");
+
+        // 2- Expected data
+
+        // 3- send the request and save the response
+
+        Response response = given().spec(specHerokuapp).contentType(ContentType.JSON) // We have to send the content type
+                                .when().body(requestBody.toString())
+                                .post("/{pp1}");
+
+
+
+        // 4- Assertions
+
+        response.then()
+                .assertThat()
+                .statusCode(200)
+                .contentType("application/json; charset=utf-8")
+                .body("booking.firstname", equalTo("Ahmet"),
+                        "booking.lastname",equalTo("Bulut"),
+                        "booking.totalprice",equalTo(111),
+                        "booking.depositpaid",equalTo(false),
+                        "booking.bookingdates.checkin",equalTo("2023-01-10"),
+                        "booking.bookingdates.checkout",equalTo("2023-01-20"));
 
 
 
