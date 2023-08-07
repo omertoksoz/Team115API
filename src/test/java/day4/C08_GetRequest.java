@@ -61,9 +61,9 @@ public class C08_GetRequest extends BaseUrlSpec {
 
         JsonPath jsonPath = response.jsonPath();
 
-        System.out.println(jsonPath.getList("data.email"));
-        System.out.println(jsonPath.getList("data.first_name"));
-        System.out.println(jsonPath.getList("data.last_name"));
+//        System.out.println(jsonPath.getList("data.email"));
+//        System.out.println(jsonPath.getList("data.first_name"));
+//        System.out.println(jsonPath.getList("data.last_name"));
 
         assertEquals(1,jsonPath.getInt("data[0].id"));
         assertEquals("george.bluth@reqres.in",jsonPath.getString("data[0].email"));
@@ -131,8 +131,6 @@ public class C08_GetRequest extends BaseUrlSpec {
         Response response = given().spec(specHerokuapp).contentType(ContentType.JSON) // We have to send the content type
                                 .when().body(requestBody.toString())
                                 .post("/{pp1}");
-
-
 
         // 4- Assertions
 
