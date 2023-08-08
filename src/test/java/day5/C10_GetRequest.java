@@ -45,4 +45,19 @@ public class C10_GetRequest {
 
     }
 
+
+    @Test
+
+    public void idHerokuapp(){
+
+        checkUserWIthIdHerokuapp(510,
+                200,
+                "Josh",
+                "Allen",
+                111,
+                true,
+                "2018-01-01",
+                "2019-01-01");
+    }
+
 }

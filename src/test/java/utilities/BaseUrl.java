@@ -13,5 +13,9 @@ public class BaseUrl {
         return "https://reqres.in/api/users/"+id;
     }
 
+    public static String  herokuappUserId(int id){
+        return " https://restful-booker.herokuapp.com/booking/"+id;
+    }
+
 
 }

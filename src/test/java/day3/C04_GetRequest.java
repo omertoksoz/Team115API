@@ -3,6 +3,7 @@ package day3;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.Test;
+import utilities.BaseUrl;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -25,7 +26,7 @@ C04_GetRequest (we started to use Matchers Class to verify all data within json 
  */
 
     // 1- End-point and request body
-    String url = "https://restful-booker.herokuapp.com/booking/125";
+    String url = "https://restful-booker.herokuapp.com/booking/704";
 
     // 2- Expected data
 
@@ -33,7 +34,7 @@ C04_GetRequest (we started to use Matchers Class to verify all data within json 
 
     Response response = given()
                             .when()
-                            .get(url);
+                            .get(BaseUrl.herokuappUserId(510));
 
 
     // 4- Assertion
