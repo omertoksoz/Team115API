@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C10 complete">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/C04_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/C04_GetRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/day5/C10_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/C10_GetRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ApiCalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ApiCalls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +150,7 @@
       <workItem from="1691171800036" duration="191000" />
       <workItem from="1691289696413" duration="1924000" />
       <workItem from="1691445632609" duration="13848000" />
+      <workItem from="1691518496687" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>

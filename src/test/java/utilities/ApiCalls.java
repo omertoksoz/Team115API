@@ -94,14 +94,16 @@ public class ApiCalls {
 
 
         response
-                .then().statusCode(statusCode)
+                .then()
+                .assertThat()
+                .statusCode(statusCode)
                .contentType("application/json; charset=utf-8")
-                .body(firstname, equalTo("firstname"),
-                        lastname, equalTo("lastname"),
-                        totalPrice, equalTo("totalprice"),
-                        depositPaid, equalTo("depositpaid"),
-                        checkIn, equalTo("bookingdates.checkin"),
-                        checkOut, equalTo("bookingdates.checkout"));
+                .body("firstname", equalTo(firstname),
+                        "lastname", equalTo(lastname),
+                        "totalprice", equalTo(totalPrice),
+                        "depositpaid", equalTo(depositPaid),
+                        "bookingdates.checkin", equalTo(checkIn),
+                        "bookingdates.checkout", equalTo(checkOut));
 
         return response;
 

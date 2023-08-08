@@ -52,8 +52,8 @@ public class C10_GetRequest {
 
         checkUserWIthIdHerokuapp(510,
                 200,
-                "Josh",
-                "Allen",
+                "John",
+                "Smith",
                 111,
                 true,
                 "2018-01-01",
