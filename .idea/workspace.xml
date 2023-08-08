@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C08 complete">
-      <change afterPath="$PROJECT_DIR$/src/test/java/day5/C09_GetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" afterDir="false" />
+    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C08 complete-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day4/C08_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day4/C08_GetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/C09_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/C09_GetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,36 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C08_GetRequest.postHerokuapp">
-    <configuration name="dummy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day3.dummy" />
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C07_GetRequest.getBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day4" />
-      <option name="MAIN_CLASS_NAME" value="day4.C07_GetRequest" />
-      <option name="METHOD_NAME" value="getBooking" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.C09_GetRequest">
     <configuration name="C08_GetRequest.postHerokuapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
@@ -89,22 +59,6 @@
       <option name="PACKAGE_NAME" value="day4" />
       <option name="MAIN_CLASS_NAME" value="day4.C08_GetRequest" />
       <option name="METHOD_NAME" value="postHerokuapp" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C08_GetRequest.userId1ReqresIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day4" />
-      <option name="MAIN_CLASS_NAME" value="day4.C08_GetRequest" />
-      <option name="METHOD_NAME" value="userId1ReqresIn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,13 +79,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C09_GetRequest.emailExistsInReqresIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day5" />
+      <option name="MAIN_CLASS_NAME" value="day5.C09_GetRequest" />
+      <option name="METHOD_NAME" value="emailExistsInReqresIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C09_GetRequest.nameExistingInReqresIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day5" />
+      <option name="MAIN_CLASS_NAME" value="day5.C09_GetRequest" />
+      <option name="METHOD_NAME" value="nameExistingInReqresIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C09_GetRequest.supportReqresInText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day5" />
+      <option name="MAIN_CLASS_NAME" value="day5.C09_GetRequest" />
+      <option name="METHOD_NAME" value="supportReqresInText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.C08_GetRequest.postHerokuapp" />
-        <item itemvalue="Application.dummy" />
         <item itemvalue="JUnit.C09_GetRequest" />
-        <item itemvalue="JUnit.C08_GetRequest.userId1ReqresIn" />
-        <item itemvalue="JUnit.C07_GetRequest.getBooking" />
+        <item itemvalue="JUnit.C09_GetRequest.supportReqresInText" />
+        <item itemvalue="JUnit.C09_GetRequest.emailExistsInReqresIn" />
+        <item itemvalue="JUnit.C09_GetRequest.nameExistingInReqresIn" />
+        <item itemvalue="JUnit.C08_GetRequest.postHerokuapp" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +150,7 @@
       <workItem from="1691109652631" duration="4105000" />
       <workItem from="1691171800036" duration="191000" />
       <workItem from="1691289696413" duration="1924000" />
-      <workItem from="1691445632609" duration="4438000" />
+      <workItem from="1691445632609" duration="6656000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>
@@ -220,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691290093891</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="C08 complete-">
+      <created>1691450720085</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691450720085</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +246,7 @@
     <MESSAGE value="C07 started." />
     <MESSAGE value="C08 started." />
     <MESSAGE value="C08 complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="C08 complete" />
+    <MESSAGE value="C08 complete-" />
+    <option name="LAST_COMMIT_MESSAGE" value="C08 complete-" />
   </component>
 </project>
