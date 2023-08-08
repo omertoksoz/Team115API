@@ -33,6 +33,36 @@ public class ApiCalls {
 
     }
 
+
+    public static Response checkUserExistWithIdJsonPath(int id, int statusCode, String email, String first_name, String last_name){
+        Response response = given()
+                .when()// body goes here
+                .get(BaseUrl.reqresInUserId(id));
+
+        response
+                .then()
+                .statusCode(statusCode)
+                .contentType("application/json; charset=utf-8");
+
+
+        JsonPath jsonPath = response.jsonPath();
+
+        // junit -> expected, actual
+        Assert.assertEquals(email,jsonPath.getString("data.email"));
+        Assert.assertEquals(first_name,jsonPath.getString("data.first_name"));
+        Assert.assertEquals(last_name,jsonPath.getString("data.last_name"));
+
+        return response;
+
+
+
+
+    }
+
+
+
+
+
     public static Response allNamesListReqresIn(int statusCode, String name){
 
         Response response = given()

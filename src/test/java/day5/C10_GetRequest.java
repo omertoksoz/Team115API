@@ -3,8 +3,7 @@ package day5;
 import org.junit.Test;
 import utilities.ApiCalls;
 
-import static utilities.ApiCalls.allNamesListReqresIn;
-import static utilities.ApiCalls.checkUserExistWithId;
+import static utilities.ApiCalls.*;
 
 public class C10_GetRequest {
 
@@ -34,6 +33,15 @@ public class C10_GetRequest {
     public void nameExistReqresIn(){
 
         allNamesListReqresIn(200,"Emma");
+
+        /// Break till 9:13 PM
+
+    }
+
+    @Test
+    public void id10ExistInReqresIn(){
+
+        checkUserExistWithIdJsonPath(10,200,"byron.fields@reqres.in","Byron","Fields");
 
     }
 
