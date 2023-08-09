@@ -96,12 +96,11 @@ public class ApiCalls {
                 .get(BaseUrl.herokuappUserId(id));
 
 
-
         response
                 .then()
                 .assertThat()
                 .statusCode(statusCode)
-               .contentType("application/json; charset=utf-8")
+                .contentType("application/json; charset=utf-8")
                 .body("firstname", equalTo(firstname),
                         "lastname", equalTo(lastname),
                         "totalprice", equalTo(totalPrice),
@@ -116,22 +115,21 @@ public class ApiCalls {
 
 
     public static Response deserializationBooking(int id,
-                                              int statuscode,
-                                              String firstname,
-                                              String lastname,
-                                              double totalprice,
-                                              boolean depositpaid,
-                                              String checkin,
-                                              String checkout) {
+                                                  int statuscode,
+                                                  String firstname,
+                                                  String lastname,
+                                                  double totalprice,
+                                                  boolean depositpaid,
+                                                  String checkin,
+                                                  String checkout) {
 
 
-
-        HashMap<String,Object> expectedData = new HashMap<>();
+        HashMap<String, Object> expectedData = new HashMap<>();
 
         HashMap<String, Object> bookingdates = new HashMap<>();
 
         bookingdates.put("checkin", checkin);
-        bookingdates.put("checkout",checkout);
+        bookingdates.put("checkout", checkout);
 
         expectedData.put("firstname", firstname);
         expectedData.put("lastname", lastname);
@@ -148,18 +146,63 @@ public class ApiCalls {
                 .statusCode(statuscode)
                 .contentType("application/json; charset=utf-8");
 
-        HashMap<String,Object> actualData = response.as(HashMap.class); // De-serialization is here
+        HashMap<String, Object> actualData = response.as(HashMap.class); // De-serialization is here
 
         // Assertion
 
-        Assert.assertEquals(expectedData.get("firstname"),actualData.get("firstname"));
-        Assert.assertEquals(expectedData.get("lastname"),actualData.get("lastname"));
-        Assert.assertEquals(expectedData.get("totalprice"),actualData.get("totalprice"));
-        Assert.assertEquals(expectedData.get("depositpaid"),actualData.get("depositpaid"));
-        Assert.assertEquals(expectedData.get("firstname"),actualData.get("firstname"));
-       // Assert.assertEquals(expectedData.get("additionalneeds"),actualData.get("additionalneeds"));
-        Assert.assertEquals(expectedData.get("checkin"),actualData.get("checkin"));
-        Assert.assertEquals(expectedData.get("checkout"),actualData.get("checkout"));
+        Assert.assertEquals(expectedData.get("firstname"), actualData.get("firstname"));
+        Assert.assertEquals(expectedData.get("lastname"), actualData.get("lastname"));
+        Assert.assertEquals(expectedData.get("totalprice"), actualData.get("totalprice"));
+        Assert.assertEquals(expectedData.get("depositpaid"), actualData.get("depositpaid"));
+        Assert.assertEquals(expectedData.get("firstname"), actualData.get("firstname"));
+        Assert.assertEquals(expectedData.get("checkin"), actualData.get("checkin"));
+        Assert.assertEquals(expectedData.get("checkout"), actualData.get("checkout"));
+
+        return response;
+    }
+
+
+    public static Response serializationBooking(int id,
+                                                int statuscode,
+                                                String firstname,
+                                                String lastname,
+                                                int totalprice,
+                                                boolean depositpaid,
+                                                String checkin,
+                                                String checkout) {
+
+
+        JSONObject expectedData = new JSONObject();
+        JSONObject bookingdates = new JSONObject();
+
+        bookingdates.put("checkin", checkin);
+        bookingdates.put("checkout", checkout);
+        expectedData.put("firstname", firstname);
+        expectedData.put("lastname", lastname);
+        expectedData.put("totalprice", totalprice);
+        expectedData.put("depositpaid", depositpaid);
+        expectedData.put("bookingdates", bookingdates);
+
+        Response response = given()
+                .when()
+                .get(BaseUrl.herokuappUserId(id));
+
+        JSONObject actualData = new JSONObject(response.getBody().asString());
+
+        response.then().statusCode(200);
+
+        Assert.assertEquals(expectedData.getString("firstname"), actualData.getString("firstname"));
+        Assert.assertEquals(expectedData.getString("lastname"), actualData.getString("lastname"));
+        Assert.assertEquals(expectedData.getInt("totalprice"), actualData.getInt("totalprice"));
+        Assert.assertEquals(expectedData.getBoolean("depositpaid"), actualData.getBoolean("depositpaid"));
+
+        JSONObject expectedbookingdates = expectedData.getJSONObject("bookingdates");
+
+
+        JSONObject actualbookingdates = actualData.getJSONObject("bookingdates");
+
+        Assert.assertEquals(expectedbookingdates.getString("checkin"), actualbookingdates.getString("checkin"));
+        Assert.assertEquals(expectedbookingdates.getString("checkout"), actualbookingdates.getString("checkout"));
 
         return response;
     }

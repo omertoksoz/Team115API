@@ -36,7 +36,7 @@ public class C11_GetRequest {
                 .when()
                 .get(BaseUrl.herokuappUserId(140));
 
-        HashMap<String,Object> actualData = response.as(HashMap.class); // De-serialization is here
+        HashMap<String,Object> actualData = response.as(HashMap.class); // De-serialization is here  , map to map
 
         // Assertion
 
@@ -58,5 +58,9 @@ public class C11_GetRequest {
         ApiCalls.deserializationBooking(95,200,"John","Smith",111.0,true,"2018-01-01","2019-01-01");
     }
 
-    // Break till 8:15 pm
+    @Test
+    public void bookingTest01(){
+
+        ApiCalls.deserializationBooking(131,200,"John","Smith",111.0,true,"2018-01-01","2019-01-01");
+    }
 }

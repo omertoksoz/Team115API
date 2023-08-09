@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C10 complete fixed">
-      <change afterPath="$PROJECT_DIR$/src/test/java/day6/C11_GetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/TestData.java" afterDir="false" />
+    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C11 complete">
+      <change afterPath="$PROJECT_DIR$/src/test/java/day6/C12_GetRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/C10_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/C10_GetRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day6/C11_GetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day6/C11_GetRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ApiCalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ApiCalls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,36 +49,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C11_GetRequest.bookingTest">
-    <configuration name="TestData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utilities.TestData" />
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C10_GetRequest.idHerokuapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day5" />
-      <option name="MAIN_CLASS_NAME" value="day5.C10_GetRequest" />
-      <option name="METHOD_NAME" value="idHerokuapp" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.C12_GetRequest.bookingTestSerialization2">
     <configuration name="C11_GetRequest.bookingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
@@ -97,7 +66,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C11_GetRequest.bookingTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C11_GetRequest.bookingTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
         <pattern>
@@ -107,7 +76,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="day6" />
       <option name="MAIN_CLASS_NAME" value="day6.C11_GetRequest" />
-      <option name="METHOD_NAME" value="bookingTest1" />
+      <option name="METHOD_NAME" value="bookingTest01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,13 +98,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C12_GetRequest.bookingTestSerialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day6" />
+      <option name="MAIN_CLASS_NAME" value="day6.C12_GetRequest" />
+      <option name="METHOD_NAME" value="bookingTestSerialization" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C12_GetRequest.bookingTestSerialization2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day6" />
+      <option name="MAIN_CLASS_NAME" value="day6.C12_GetRequest" />
+      <option name="METHOD_NAME" value="bookingTestSerialization2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.C12_GetRequest.bookingTestSerialization2" />
+        <item itemvalue="JUnit.C12_GetRequest.bookingTestSerialization" />
+        <item itemvalue="JUnit.C11_GetRequest.bookingTest01" />
         <item itemvalue="JUnit.C11_GetRequest.bookingTest" />
         <item itemvalue="JUnit.C11_GetRequest.testWithHashMap" />
-        <item itemvalue="JUnit.C10_GetRequest.idHerokuapp" />
-        <item itemvalue="JUnit.C11_GetRequest.bookingTest1" />
-        <item itemvalue="Application.TestData" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +154,7 @@
       <workItem from="1691171800036" duration="191000" />
       <workItem from="1691289696413" duration="1924000" />
       <workItem from="1691445632609" duration="13848000" />
-      <workItem from="1691518496687" duration="13964000" />
+      <workItem from="1691518496687" duration="19349000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691519042090</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="C11 complete">
+      <created>1691539381998</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1691539381998</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +290,7 @@
     <MESSAGE value="C10 wip" />
     <MESSAGE value="C10 complete" />
     <MESSAGE value="C10 complete fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="C10 complete fixed" />
+    <MESSAGE value="C11 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="C11 complete" />
   </component>
 </project>
