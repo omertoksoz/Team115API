@@ -3,10 +3,14 @@ package utilities;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
+import org.json.JSONObject;
 import org.junit.Assert;
+
+import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
+
 
 public class ApiCalls {
 
@@ -111,4 +115,52 @@ public class ApiCalls {
     }
 
 
+    public static Response deserializationBooking(int id,
+                                              int statuscode,
+                                              String firstname,
+                                              String lastname,
+                                              double totalprice,
+                                              boolean depositpaid,
+                                              String checkin,
+                                              String checkout) {
+
+
+
+        HashMap<String,Object> expectedData = new HashMap<>();
+
+        HashMap<String, Object> bookingdates = new HashMap<>();
+
+        bookingdates.put("checkin", checkin);
+        bookingdates.put("checkout",checkout);
+
+        expectedData.put("firstname", firstname);
+        expectedData.put("lastname", lastname);
+        expectedData.put("totalprice", totalprice);
+        expectedData.put("depositpaid", depositpaid);
+        expectedData.put("bookingdates", bookingdates);
+
+
+        Response response = given()
+                .when()
+                .get(BaseUrl.herokuappUserId(id));
+
+        response.then()
+                .statusCode(statuscode)
+                .contentType("application/json; charset=utf-8");
+
+        HashMap<String,Object> actualData = response.as(HashMap.class); // De-serialization is here
+
+        // Assertion
+
+        Assert.assertEquals(expectedData.get("firstname"),actualData.get("firstname"));
+        Assert.assertEquals(expectedData.get("lastname"),actualData.get("lastname"));
+        Assert.assertEquals(expectedData.get("totalprice"),actualData.get("totalprice"));
+        Assert.assertEquals(expectedData.get("depositpaid"),actualData.get("depositpaid"));
+        Assert.assertEquals(expectedData.get("firstname"),actualData.get("firstname"));
+       // Assert.assertEquals(expectedData.get("additionalneeds"),actualData.get("additionalneeds"));
+        Assert.assertEquals(expectedData.get("checkin"),actualData.get("checkin"));
+        Assert.assertEquals(expectedData.get("checkout"),actualData.get("checkout"));
+
+        return response;
+    }
 }
