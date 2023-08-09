@@ -43,4 +43,22 @@ public class TestData {
 
         return expectedData;
     }
+
+    public static JSONObject createBookingData(){
+
+        JSONObject expectedData = new JSONObject();
+        JSONObject bookingdates = new JSONObject();
+
+        bookingdates.put("checkin", "2023-01-01");
+        bookingdates.put("checkout", "2023-02-01");
+
+        expectedData.put("firstname", "Kemal");
+        expectedData.put("lastname", "Sunal");
+        expectedData.put("totalprice", 999);
+        expectedData.put("depositpaid", true);
+        expectedData.put("bookingdates", bookingdates);
+
+        return expectedData;
+
+    }
 }
