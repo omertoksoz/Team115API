@@ -2,7 +2,6 @@ package utilities;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.junit.Assert;
 
@@ -163,14 +162,14 @@ public class ApiCalls {
     }
 
 
-    public static Response serializationBooking(int id,
-                                                int statuscode,
-                                                String firstname,
-                                                String lastname,
-                                                int totalprice,
-                                                boolean depositpaid,
-                                                String checkin,
-                                                String checkout) {
+    public static Response BookingJson(int id,
+                                       int statuscode,
+                                       String firstname,
+                                       String lastname,
+                                       int totalprice,
+                                       boolean depositpaid,
+                                       String checkin,
+                                       String checkout) {
 
 
         JSONObject expectedData = new JSONObject();

@@ -13,7 +13,7 @@ import static io.restassured.RestAssured.given;
 public class C12_GetRequest {
 
     @Test
-    public void bookingTestSerialization(){
+    public void bookingTestRequestBodyJson(){
 
         // Serialization means from java to json
 
@@ -44,10 +44,10 @@ public class C12_GetRequest {
 
 
     @Test
-    public void bookingTestSerialization2(){
+    public void bookingTestRequestBodyJson2(){
 
-        ApiCalls.serializationBooking(303,200,"Josh","Allen",111,true,"2018-01-01","2019-01-01" );
-        ApiCalls.serializationBooking(793,200,"John","Smith",111,true,"2018-01-01","2019-01-01" );
+        ApiCalls.BookingJson(303,200,"Josh","Allen",111,true,"2018-01-01","2019-01-01" );
+        ApiCalls.BookingJson(793,200,"John","Smith",111,true,"2018-01-01","2019-01-01" );
 
 
     }
