@@ -10,6 +10,7 @@ import utilities.BaseUrl;
 import utilities.TestData;
 
 import static io.restassured.RestAssured.given;
+import static utilities.ApiCalls.createBookingData;
 
 public class C13_PostRequest {
 
@@ -44,5 +45,16 @@ public class C13_PostRequest {
         Assert.assertEquals(expectedData.getJSONObject("bookingdates").getString("checkout"),
                 actualData.getString("booking.bookingdates.checkout"));
     }
+
+
+
+    @Test
+    public void createBookingData01(){
+        createBookingData(200,"ahmet",
+                "sezgin",125, true,"wifi",
+                "2023-07-25", "2023-07-30");
+    }
+
+
 
 }

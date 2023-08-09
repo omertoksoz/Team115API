@@ -145,17 +145,6 @@ public class C08_GetRequest extends BaseUrlSpec {
                         "booking.bookingdates.checkin",equalTo("2023-01-10"),
                         "booking.bookingdates.checkout",equalTo("2023-01-20"));
 
-
-
-
-
-
-
-
-
     }
-
-
-
 
 }
