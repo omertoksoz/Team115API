@@ -61,7 +61,6 @@ public class C13_PostRequest {
 
         Response response = given()
                 .contentType("application/json; charset=utf-8")
-
                 .when()
                 .body(requestBody) // it will be converted to json by Gson
                 .post(BaseUrl.createBookingUrl());
@@ -70,7 +69,7 @@ public class C13_PostRequest {
                 .then()
                 .assertThat()
                 .statusCode(200);
-        response.prettyPrint();
+       // response.prettyPrint();
 
         //response.prettyPrint();
         JsonPath actualData = response.jsonPath();
@@ -82,13 +81,9 @@ public class C13_PostRequest {
         Assert.assertEquals(requestBody.get("additionalneeds"), actualData.getString("booking.additionalneeds"));
 
 
-       HashMap<String,Object> bookingdates = (HashMap)requestBody.get("bookingdates");
+      HashMap<String,Object> bookingdates = (HashMap)requestBody.get("bookingdates");
         Assert.assertEquals(bookingdates.get("checkin"), actualData.getString("booking.bookingdates.checkin"));
         Assert.assertEquals(bookingdates.get("checkout"), actualData.getString("booking.bookingdates.checkout"));
-
-
-
-
 
     }
 
@@ -98,6 +93,12 @@ public class C13_PostRequest {
         createBookingData(200, "ahmet",
                 "sezgin", 125, true, "wifi",
                 "2023-07-25", "2023-07-30");
+    }
+
+    @Test
+    public void CreateBookingDataWithHashMap(){
+
+        createBookingWithHashMap();
     }
 
 
