@@ -13,9 +13,9 @@ import static io.restassured.RestAssured.given;
 public class C12_GetRequest {
 
     @Test
-    public void bookingTestRequestBodyJson(){
+    public void bookingTestExpectedBodyJson(){
 
-        // Serialization means from java to json
+
 
         JSONObject expectedData = TestData.getBookingDataJSON();
 
@@ -23,7 +23,10 @@ public class C12_GetRequest {
                 .when()
                 .get(BaseUrl.herokuappUserId(303));
 
-        JSONObject actualData = new JSONObject(response.getBody().asString());  // Serialization json to json
+        JSONObject actualData = new JSONObject(response.getBody().asString());
+
+        // Why am I converting the response to JSONObject?
+        // Because I can
 
         // Assertions
 
@@ -46,8 +49,8 @@ public class C12_GetRequest {
     @Test
     public void bookingTestRequestBodyJson2(){
 
-        ApiCalls.BookingJson(303,200,"Josh","Allen",111,true,"2018-01-01","2019-01-01" );
-        ApiCalls.BookingJson(793,200,"John","Smith",111,true,"2018-01-01","2019-01-01" );
+        ApiCalls.BookingJson(1677,200,"Jane","Doe",111,true,"2018-01-01","2019-01-01" );
+       // ApiCalls.BookingJson(793,200,"John","Smith",111,true,"2018-01-01","2019-01-01" );
 
 
     }

@@ -31,12 +31,14 @@ public class C11_GetRequest {
     @Test
     public void testWithHashMap(){
 
-      HashMap<String,Object> expectedData = TestData.getBookingData();
+      HashMap<String,Object> expectedData = TestData.getBookingDataHashMap();
+
+      // if my expected data id HashMap, then my actual data has to be HashMap
         Response response = given()
                 .when()
                 .get(BaseUrl.herokuappUserId(140));
 
-        HashMap<String,Object> actualData = response.as(HashMap.class); // De-serialization is here  , map to map
+        HashMap<String,Object> actualData = response.as(HashMap.class); // De-serialization is here  , json to java object
 
         // Assertion
 
@@ -55,7 +57,7 @@ public class C11_GetRequest {
     @Test
     public void bookingTest(){
 
-        ApiCalls.deserializationBooking(95,200,"John","Smith",111.0,true,"2018-01-01","2019-01-01");
+        ApiCalls.deserializationBooking(95,200,"Josh","Allen",111.0,true,"2018-01-01","2019-01-01");
     }
 
     @Test

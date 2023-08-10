@@ -9,6 +9,9 @@ import org.junit.Test;
 import utilities.BaseUrl;
 import utilities.TestData;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 import static utilities.ApiCalls.createBookingData;
 
@@ -20,8 +23,11 @@ public class C13_PostRequest {
 
         // System.out.println(TestData.createBookingData().toString());
 
-        Response response = given().contentType("application/json; charset=utf-8")
-                .when().body(expectedData.toString())
+        Response response = given()
+                .contentType("application/json; charset=utf-8")
+
+                .when()
+                .body(expectedData.toString()) // it is JsonObject, must be sent as String
                 .post(BaseUrl.createBookingUrl());
 
         response
@@ -29,7 +35,7 @@ public class C13_PostRequest {
                 .assertThat()
                 .statusCode(200);
 
-        response.prettyPrint();
+        //response.prettyPrint();
         JsonPath actualData = response.jsonPath();
 
         Assert.assertEquals(expectedData.getString("firstname"), actualData.getString("booking.firstname"));
@@ -46,15 +52,53 @@ public class C13_PostRequest {
                 actualData.getString("booking.bookingdates.checkout"));
     }
 
+    @Test
+    public void createBookingWithHashMap() {  // It will be serialization because hashmap will be sent as body,
+                                                // hashmap will turn into a json
+        HashMap<String,Object> requestBody = TestData.postBookingDataHashMap();
+
+        // System.out.println(TestData.createBookingData().toString());
+
+        Response response = given()
+                .contentType("application/json; charset=utf-8")
+
+                .when()
+                .body(requestBody) // it will be converted to json by Gson
+                .post(BaseUrl.createBookingUrl());
+
+        response
+                .then()
+                .assertThat()
+                .statusCode(200);
+        response.prettyPrint();
+
+        //response.prettyPrint();
+        JsonPath actualData = response.jsonPath();
+
+        Assert.assertEquals(requestBody.get("firstname"), actualData.getString("booking.firstname"));
+        Assert.assertEquals(requestBody.get("lastname"), actualData.getString("booking.lastname"));
+        Assert.assertEquals(requestBody.get("totalprice"), actualData.getInt("booking.totalprice"));
+        Assert.assertEquals(requestBody.get("depositpaid"), actualData.getBoolean("booking.depositpaid"));
+        Assert.assertEquals(requestBody.get("additionalneeds"), actualData.getString("booking.additionalneeds"));
+
+
+       HashMap<String,Object> bookingdates = (HashMap)requestBody.get("bookingdates");
+        Assert.assertEquals(bookingdates.get("checkin"), actualData.getString("booking.bookingdates.checkin"));
+        Assert.assertEquals(bookingdates.get("checkout"), actualData.getString("booking.bookingdates.checkout"));
+
+
+
+
+
+    }
 
 
     @Test
-    public void createBookingData01(){
-        createBookingData(200,"ahmet",
-                "sezgin",125, true,"wifi",
+    public void createBookingData01() {
+        createBookingData(200, "ahmet",
+                "sezgin", 125, true, "wifi",
                 "2023-07-25", "2023-07-30");
     }
-
 
 
 }

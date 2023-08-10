@@ -10,6 +10,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static utilities.BaseUrl.createBooking;
+import static utilities.BaseUrl.createBookingUrl;
 
 
 public class ApiCalls {
@@ -170,8 +171,6 @@ public class ApiCalls {
                                        boolean depositpaid,
                                        String checkin,
                                        String checkout) {
-
-
         JSONObject expectedData = new JSONObject();
         JSONObject bookingdates = new JSONObject();
 
@@ -182,7 +181,6 @@ public class ApiCalls {
         expectedData.put("totalprice", totalprice);
         expectedData.put("depositpaid", depositpaid);
         expectedData.put("bookingdates", bookingdates);
-
         Response response = given()
                 .when()
                 .get(BaseUrl.herokuappUserId(id));
@@ -230,7 +228,7 @@ public class ApiCalls {
                 .basic("admin","password123")
                 .body(expectedData.toString())// if we are using JSONObject we should add .toString()
                 .when()
-                .post(createBooking());
+                .post(createBookingUrl());
         response.prettyPrint();
         response.then()
                 .assertThat()
