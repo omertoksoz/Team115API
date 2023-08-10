@@ -27,4 +27,9 @@ public class BaseUrl {
         return url;
     }
 
+    public static String getAllFruits(){
+
+        return "https://api.predic8.de/shop/v2/products";
+    }
+
 }
