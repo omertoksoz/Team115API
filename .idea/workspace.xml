@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C15 started">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day8/C15_JsonPlaceHolder.java" afterDir="false" />
+    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C16 post started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day7/C15_GetFruits.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day8/C16_PostJsonPlaceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day8/C16_PostJsonPlaceHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,23 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObjectActualDataJSONObject">
-    <configuration name="C15_JsonPlaceHolder.getAllResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day8" />
-      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
-      <option name="METHOD_NAME" value="getAllResources" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.C16_PostJsonPlaceHolder.postResource">
     <configuration name="C15_JsonPlaceHolder.getOneResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
@@ -131,13 +112,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C16_PostJsonPlaceHolder.postResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C16_PostJsonPlaceHolder" />
+      <option name="METHOD_NAME" value="postResource" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.C16_PostJsonPlaceHolder.postResource" />
         <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObjectActualDataJSONObject" />
         <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObject" />
         <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceDeSerialization" />
         <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResource" />
-        <item itemvalue="JUnit.C15_JsonPlaceHolder.getAllResources" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +155,7 @@
       <workItem from="1691518496687" duration="21234000" />
       <workItem from="1691613211690" duration="12881000" />
       <workItem from="1691683141078" duration="7460000" />
-      <workItem from="1691700314470" duration="3837000" />
+      <workItem from="1691700314470" duration="8295000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>
@@ -321,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691631984943</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="C15 jsonObject started">
+      <created>1691712110636</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1691712110636</updated>
+    </task>
+    <task id="LOCAL-00025" summary="C16 post started">
+      <created>1691714235408</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1691714235408</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +362,8 @@
     <MESSAGE value="C13 post with Serialization added" />
     <MESSAGE value="C14" />
     <MESSAGE value="C15 started" />
-    <option name="LAST_COMMIT_MESSAGE" value="C15 started" />
+    <MESSAGE value="C15 jsonObject started" />
+    <MESSAGE value="C16 post started" />
+    <option name="LAST_COMMIT_MESSAGE" value="C16 post started" />
   </component>
 </project>

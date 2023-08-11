@@ -93,13 +93,25 @@ public class TestData {
     }
 
     public static JSONObject expectedJsonObjectJsonPlaceHolder(){
+/*
+        {
+            "map": {
+            "title": "Magic Music Man",
+                    "body": "Ulker",
+                    "userId": 1
+        },
+            "id": 101
+        }
+expectedData.getJsonObject("map").getString("title")
 
+ */
         JSONObject expectedData = new JSONObject();
+        JSONObject map = new JSONObject();
 
-
-        expectedData.put("userId",1);
-        expectedData.put("title","Magic Music Man");
-        expectedData.put("body","Ulker");
+        map.put("userId",1);
+        map.put("title","Magic Music Man");
+        map.put("body","Ulker");
+        expectedData.put("map",map);
         expectedData.put("id",101);
 
         return expectedData;
@@ -120,12 +132,25 @@ public class TestData {
     }
 
     public static HashMap<String,Object> expectedHashMapJsonPlaceHolder(){
+        /*
+         {
+            "map": {
+            "title": "Magic Music Man",
+                    "body": "Ulker",
+                    "userId": 1
+        },
+            "id": 101
+        }
+         */
 
         HashMap<String,Object> expectedData = new HashMap<>();
+        HashMap<String,Object> map = new HashMap<>();
 
-        expectedData.put("userId",1);
-        expectedData.put("title","Magic Music Man");
-        expectedData.put("body","Ulker");
+        map.put("userId",1);
+        map.put("title","Magic Music Man");
+        map.put("body","Ulker");
+
+        expectedData.put("map",map);
         expectedData.put("id",1.0);
 
 
