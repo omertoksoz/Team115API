@@ -80,6 +80,8 @@ public class C15_JsonPlaceHolder {
                 .contentType(ContentType.JSON);
                // .log().all();
 
+        response.prettyPrint();
+
         // JsonPath
         JsonPath actualData = response.jsonPath();
 

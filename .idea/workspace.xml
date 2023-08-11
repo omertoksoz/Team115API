@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C16 post started">
+    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C16 post started/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day8/C15_JsonPlaceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day8/C15_JsonPlaceHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/day8/C16_PostJsonPlaceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day8/C16_PostJsonPlaceHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestData.java" afterDir="false" />
     </list>
@@ -47,7 +48,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.C16_PostJsonPlaceHolder.postResource">
+  <component name="RunManager" selected="JUnit.C16_PostJsonPlaceHolder.deleteResource">
     <configuration name="C15_JsonPlaceHolder.getOneResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
@@ -64,55 +65,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C15_JsonPlaceHolder.getOneResourceDeSerialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day8" />
-      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
-      <option name="METHOD_NAME" value="getOneResourceDeSerialization" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C15_JsonPlaceHolder.getOneResourceJSONObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day8" />
-      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
-      <option name="METHOD_NAME" value="getOneResourceJSONObject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C15_JsonPlaceHolder.getOneResourceJSONObjectActualDataJSONObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Team115API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day8" />
-      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
-      <option name="METHOD_NAME" value="getOneResourceJSONObjectActualDataJSONObject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C16_PostJsonPlaceHolder.postResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C16_PostJsonPlaceHolder.deleteResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +75,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="day8" />
       <option name="MAIN_CLASS_NAME" value="day8.C16_PostJsonPlaceHolder" />
-      <option name="METHOD_NAME" value="postResource" />
+      <option name="METHOD_NAME" value="deleteResource" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C16_PostJsonPlaceHolder.patchResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C16_PostJsonPlaceHolder" />
+      <option name="METHOD_NAME" value="patchResource" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C16_PostJsonPlaceHolder.postResourceHashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C16_PostJsonPlaceHolder" />
+      <option name="METHOD_NAME" value="postResourceHashMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C16_PostJsonPlaceHolder.updateResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Team115API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C16_PostJsonPlaceHolder" />
+      <option name="METHOD_NAME" value="updateResource" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.C16_PostJsonPlaceHolder.postResource" />
-        <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObjectActualDataJSONObject" />
-        <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObject" />
-        <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceDeSerialization" />
+        <item itemvalue="JUnit.C16_PostJsonPlaceHolder.deleteResource" />
+        <item itemvalue="JUnit.C16_PostJsonPlaceHolder.patchResource" />
         <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResource" />
+        <item itemvalue="JUnit.C16_PostJsonPlaceHolder.updateResource" />
+        <item itemvalue="JUnit.C16_PostJsonPlaceHolder.postResourceHashMap" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +156,7 @@
       <workItem from="1691518496687" duration="21234000" />
       <workItem from="1691613211690" duration="12881000" />
       <workItem from="1691683141078" duration="7460000" />
-      <workItem from="1691700314470" duration="8295000" />
+      <workItem from="1691700314470" duration="10723000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>
@@ -332,14 +333,20 @@
       <option name="project" value="LOCAL" />
       <updated>1691714235408</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="C16 post started/">
+      <created>1691716850246</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1691716850246</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="started" />
     <MESSAGE value="C01 complete" />
     <MESSAGE value="C02 complete" />
     <MESSAGE value="C04 complete" />
@@ -364,6 +371,7 @@
     <MESSAGE value="C15 started" />
     <MESSAGE value="C15 jsonObject started" />
     <MESSAGE value="C16 post started" />
-    <option name="LAST_COMMIT_MESSAGE" value="C16 post started" />
+    <MESSAGE value="C16 post started/" />
+    <option name="LAST_COMMIT_MESSAGE" value="C16 post started/" />
   </component>
 </project>

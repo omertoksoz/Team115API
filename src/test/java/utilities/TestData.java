@@ -146,12 +146,12 @@ expectedData.getJsonObject("map").getString("title")
         HashMap<String,Object> expectedData = new HashMap<>();
         HashMap<String,Object> map = new HashMap<>();
 
-        map.put("userId",1);
+        map.put("userId",1.0);
         map.put("title","Magic Music Man");
         map.put("body","Ulker");
 
         expectedData.put("map",map);
-        expectedData.put("id",1.0);
+        expectedData.put("id",101.0);
 
 
         return expectedData;
@@ -159,6 +159,32 @@ expectedData.getJsonObject("map").getString("title")
     }
 
 
+    public static JSONObject updateJsonPlaceHolder(){
 
+        JSONObject updateBody = new JSONObject();
+
+
+        updateBody.put("userId",1);
+        updateBody.put("title","Magic Music Man");
+        updateBody.put("body","Ulker");
+
+
+        return updateBody;
+
+    }
+
+    public static JSONObject patchJsonPlaceHolder(){
+
+        JSONObject patchbody = new JSONObject();
+
+
+
+        patchbody.put("title","sun");
+
+
+
+        return patchbody;
+
+    }
 
 }
