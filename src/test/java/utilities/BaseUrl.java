@@ -27,9 +27,12 @@ public class BaseUrl {
         return url;
     }
 
-    public static String getAllFruits(){
 
-        return "https://api.predic8.de/shop/v2/products";
+    public static String jsonPlaceHolder(){
+
+        return "https://jsonplaceholder.typicode.com/posts";
     }
+
+
 
 }

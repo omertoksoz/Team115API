@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C14">
-      <change afterPath="$PROJECT_DIR$/src/test/java/day7/C15_GetFruits.java" afterDir="false" />
+    <list default="true" id="47318a7c-84a6-45d4-9554-d11284e59591" name="Changes" comment="C15 started">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day8/C15_JsonPlaceHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day7/C14_PostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day7/C14_PostRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day7/C15_GetFruits.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseUrl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,97 +35,97 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Omer.Toksoz/Downloads/1674607417239-FastTrack_API/FastTrack_API",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Omer.Toksoz/Downloads/1674607417239-FastTrack_API/FastTrack_API&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.C15_GetFruits.postFruit">
-    <configuration name="C13_PostRequest.CreateBookingDataWithHashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObjectActualDataJSONObject">
+    <configuration name="C15_JsonPlaceHolder.getAllResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day6.*" />
+          <option name="PATTERN" value="day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day6" />
-      <option name="MAIN_CLASS_NAME" value="day6.C13_PostRequest" />
-      <option name="METHOD_NAME" value="CreateBookingDataWithHashMap" />
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="getAllResources" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C13_PostRequest.createBookingWithHashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C15_JsonPlaceHolder.getOneResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day6.*" />
+          <option name="PATTERN" value="day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day6" />
-      <option name="MAIN_CLASS_NAME" value="day6.C13_PostRequest" />
-      <option name="METHOD_NAME" value="createBookingWithHashMap" />
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="getOneResource" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C14_PostRequest.postJsonObjectHeroku" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C15_JsonPlaceHolder.getOneResourceDeSerialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day7.*" />
+          <option name="PATTERN" value="day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day7" />
-      <option name="MAIN_CLASS_NAME" value="day7.C14_PostRequest" />
-      <option name="METHOD_NAME" value="postJsonObjectHeroku" />
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="getOneResourceDeSerialization" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C15_GetFruits.getAllFruits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C15_JsonPlaceHolder.getOneResourceJSONObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day7.*" />
+          <option name="PATTERN" value="day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day7" />
-      <option name="MAIN_CLASS_NAME" value="day7.C15_GetFruits" />
-      <option name="METHOD_NAME" value="getAllFruits" />
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="getOneResourceJSONObject" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C15_GetFruits.postFruit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C15_JsonPlaceHolder.getOneResourceJSONObjectActualDataJSONObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Team115API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day7.*" />
+          <option name="PATTERN" value="day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day7" />
-      <option name="MAIN_CLASS_NAME" value="day7.C15_GetFruits" />
-      <option name="METHOD_NAME" value="postFruit" />
+      <option name="PACKAGE_NAME" value="day8" />
+      <option name="MAIN_CLASS_NAME" value="day8.C15_JsonPlaceHolder" />
+      <option name="METHOD_NAME" value="getOneResourceJSONObjectActualDataJSONObject" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.C15_GetFruits.postFruit" />
-        <item itemvalue="JUnit.C15_GetFruits.getAllFruits" />
-        <item itemvalue="JUnit.C14_PostRequest.postJsonObjectHeroku" />
-        <item itemvalue="JUnit.C13_PostRequest.CreateBookingDataWithHashMap" />
-        <item itemvalue="JUnit.C13_PostRequest.createBookingWithHashMap" />
+        <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObjectActualDataJSONObject" />
+        <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceJSONObject" />
+        <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResourceDeSerialization" />
+        <item itemvalue="JUnit.C15_JsonPlaceHolder.getOneResource" />
+        <item itemvalue="JUnit.C15_JsonPlaceHolder.getAllResources" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +156,9 @@
       <workItem from="1691289696413" duration="1924000" />
       <workItem from="1691445632609" duration="13848000" />
       <workItem from="1691518496687" duration="21234000" />
-      <workItem from="1691613211690" duration="12663000" />
+      <workItem from="1691613211690" duration="12881000" />
+      <workItem from="1691683141078" duration="7460000" />
+      <workItem from="1691700314470" duration="3837000" />
     </task>
     <task id="LOCAL-00001" summary="started">
       <created>1691018988124</created>
@@ -310,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691629392761</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="C15 started">
+      <created>1691631984943</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1691631984943</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +350,7 @@
     <MESSAGE value="C13 almost complete , modified" />
     <MESSAGE value="C13 post with Serialization added" />
     <MESSAGE value="C14" />
-    <option name="LAST_COMMIT_MESSAGE" value="C14" />
+    <MESSAGE value="C15 started" />
+    <option name="LAST_COMMIT_MESSAGE" value="C15 started" />
   </component>
 </project>
