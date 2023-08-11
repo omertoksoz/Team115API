@@ -77,6 +77,63 @@ public class TestData {
         expectedData.put("bookingdates", bookingdates);
 
         return expectedData;
+    }
+
+    public static JSONObject requestBodyJsonObjectJsonPlaceHolder(){
+
+        JSONObject requestBody = new JSONObject();
+
+
+        requestBody.put("userId",1);
+        requestBody.put("title","Magic Music Man");
+        requestBody.put("body","Ulker");
+
+        return requestBody;
 
     }
+
+    public static JSONObject expectedJsonObjectJsonPlaceHolder(){
+
+        JSONObject expectedData = new JSONObject();
+
+
+        expectedData.put("userId",1);
+        expectedData.put("title","Magic Music Man");
+        expectedData.put("body","Ulker");
+        expectedData.put("id",101);
+
+        return expectedData;
+
+    }
+
+
+    public static HashMap<String,Object> requestBodyHashMapJsonPlaceHolder(){
+
+        HashMap<String,Object> requestBody = new HashMap<>();
+
+        requestBody.put("userId",1);
+        requestBody.put("title","Magic Music Man");
+        requestBody.put("body","Ulker");
+
+        return requestBody;
+
+    }
+
+    public static HashMap<String,Object> expectedHashMapJsonPlaceHolder(){
+
+        HashMap<String,Object> expectedData = new HashMap<>();
+
+        expectedData.put("userId",1);
+        expectedData.put("title","Magic Music Man");
+        expectedData.put("body","Ulker");
+        expectedData.put("id",1.0);
+
+
+        return expectedData;
+
+    }
+
+
+
+
 }
